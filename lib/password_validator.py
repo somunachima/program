@@ -23,9 +23,6 @@ def is_valid(password):
     dollar = "$"
     percent = "%"
     and_sign = "&"
-    if (len(password) > 7) and (exclamation in password or at_sign in password or dollar in password or percent in password or and_sign in password):
-        return True
-    else:
-        return False
+    return (len(password) > 7) and (exclamation in password or at_sign in password or dollar in password or percent in password or and_sign in password)
     
 
